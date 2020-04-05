@@ -1,7 +1,7 @@
 ul {
     padding: 0;
 }
-.todolist-item {
+.undone {
     list-style: none;
     width: 500px;
     padding: 20px;
