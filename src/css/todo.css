@@ -3,13 +3,25 @@ ul {
 }
 .undone {
     list-style: none;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     padding: 20px;
     margin: 0 auto 30px;
     border: 1px solid #ddd;
     border-radius: 4px;
     box-shadow: 1px 2px 5px 1px rgba(0,0,0,.1);
-    box-sizing: border-box;
+}
+
+.done {
+    list-style: none;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto 30px;
+}
+
+.done .todolist-desc {
+    display: none;
 }
 
 .todolist-title-group {
