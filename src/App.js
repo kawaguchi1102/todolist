@@ -17,7 +17,7 @@ class App extends Component {
           id: 2,
           title: "Hello, Redux!",
           desc: "Reduxもはじめました",
-          done: false
+          done: true
         }
       ]
     }
