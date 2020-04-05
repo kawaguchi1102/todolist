@@ -1,5 +1,6 @@
 .main-area {
   width: 100%;
+  padding: 80px 0;
   background-color: #fafafa;
 }
 
@@ -11,6 +12,7 @@
 }
 
 .page-title {
+  margin-bottom: 40px;
   font-size: 24px;
   text-align: center;
 }
