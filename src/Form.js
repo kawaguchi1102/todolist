@@ -6,9 +6,9 @@ class Form extends Component {
         return (
             <div className="form">
                 <form onSubmit={this.props.handleSubmit}>
-                    <input name="title" type="text" placeholder="タイトル ＊必須"/>
-                    <textarea name="desc" placeholder="説明を入力" ></textarea>
-                    <button type="submit">todoを作成</button>
+                    <input className="form-title" name="title" type="text" placeholder="タイトル ＊必須"/>
+                    <textarea className="form-desc" name="desc" placeholder="説明を入力" cols="30" rows="2"></textarea>
+                    <button className="form-button" type="submit">Todoを作成</button>
                 </form>
             </div>
         );
