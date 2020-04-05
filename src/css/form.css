@@ -25,6 +25,11 @@
     font-size: 14px;
 }
 
+.form-title,
+.form-desc {
+    box-sizing: border-box;
+}
+
 .form-button {
     display: block;
     max-width: 200px;
