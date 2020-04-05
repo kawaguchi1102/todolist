@@ -9,15 +9,15 @@ class App extends Component {
     const todos = [
         {
           id: 1,
-          title: "Hello, React!",
-          desc: "Reactはじめました",
+          title: "掃除をする",
+          desc: "掃除機をかける",
           done: false
         },
         {
           id: 2,
-          title: "Hello, Redux!",
-          desc: "Reduxもはじめました",
-          done: true
+          title: "買い物に行く",
+          desc: "アイスを買う",
+          done: false
         }
       ]
       this.state = {
@@ -47,17 +47,28 @@ class App extends Component {
       e.target.desc.value = '';
   }
 
+  setTodoStatus(clickTodo) {
+      const todos = this.state.todos.slice();
+      const todo = todos[clickTodo.id - 1];
+      todo.done = !todo.done;
+      todos[clickTodo.id -1] = todo;
+
+      this.setState({ todos });
+  }
+
+
   render() {
     return (
         <div className="main-area">
 
           <div className="content-area">
-            <h1 className="page-title">ReactでTodoアプリをつくってみた</h1>
+            <h1 className="page-title">ReactでTodoリストをつくろう</h1>
 
             <Form handleSubmit={this.handleSubmit.bind(this)} />
 
             <TodoList
               todos={this.state.todos}
+              setTodoStatus={this.setTodoStatus.bind(this)}
             />
           </div>
 
