@@ -25,11 +25,13 @@ class App extends Component {
 
   render() {
     return (
-        <div className="app">
-          <h1>ReactでTodoアプリをつくってみた😊</h1>
-          <TodoList
-            todos={this.state.todos}
-          />
+        <div className="main-area">
+          <div className="content-area">
+            <h1 className="page-title">ReactでTodoアプリをつくってみた</h1>
+            <TodoList
+              todos={this.state.todos}
+            />
+          </div>
         </div>
     );
   }
